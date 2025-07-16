@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sección Médicos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .medicos {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    .medicos-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .medicos-header-text {
+      max-width: 65%;
+    }
+    .medicos-header-text h2 {
+      font-weight: 700;
+      color: #0288d1; /* blue accent */
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .medicos-header-text p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    .medicos-header-icon {
+      max-width: 120px;
+      flex-shrink: 0;
+    }
+    .medicos-header-icon img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .medicos-subtitle {
+      margin: 2rem 0 1.5rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #0288d1;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .medicos-blocks {
+      display: flex;
+      justify-content: center;
+      gap: 0.2rem;
+      flex-wrap: nowrap;
+      margin-bottom: 2rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .medicos-block {
+      padding: 0.8rem 1rem;
+      text-align: center;
+      line-height: 1.3;
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .medicos-block.highlight-1 {
+      background-color: #0288d1;
+    }
+    .medicos-block.highlight-2 {
+      background-color: #57b3a8;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: white;
+    }
+    .medicos-block.highlight-3 {
+      background-color: #0288d1;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: white;
+    }
+    .medicos-block.highlight-4 {
+      background-color: #57b3a8;
+      font-weight: 500;
+      font-size: 0.85rem;
+    }
+    .medicos-block.highlight-5 {
+      background-color: #0288d1;
+      font-weight: 500;
+      font-size: 0.85rem;
+    }
+
+    .medicos-list-section {
+      font-size: 1rem;
+      max-width: 850px;
+      margin: 0 auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .medicos-list-title {
+      color: #0288d1;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+    .medicos-lists {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .lista-medicos {
+      flex: 1 1 45%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #444;
+    }
+    .lista-medicos li {
+      display: flex;
+      align-items: center;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #d1d5db; /* tailwind gray-300 */
+      font-weight: 400;
+    }
+    .lista-medicos li svg {
+      min-width: 20px;
+      min-height: 20px;
+      fill: #0288d1;
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      .medicos-header-text {
+        max-width: 100%;
+      }
+      .medicos-blocks {
+        flex-wrap: wrap;
+      }
+      .medicos-block {
+        flex: 1 1 45%;
+        font-size: 0.8rem;
+        padding: 0.7rem 0.6rem;
+      }
+      .medicos-lists {
+        flex-direction: column;
+      }
+      .lista-medicos {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="medicos" aria-label="Sección Médicos Funcionales, Alternativos y Bioenergéticos">
+    <div class="medicos-header">
+      <div class="medicos-header-text">
+        <h2>Médicos Funcionales, Alternativos y Bioenergéticos</h2>
+        <p>Transforma tu vida con nosotros. Te ayudaremos a empoderarte de tu salud. Si no cuentas con un diagnóstico preciso o un tratamiento efectivo, en <a href="https://holomedicalcenter.com.co" target="_blank" rel="noopener" class="text-blue-600 underline hover:text-blue-800">Holomedical Center</a> encontrarás al mejor equipo médico dispuesto a guiarte.</p>
+      </div>
+      <div class="medicos-header-icon" role="img" aria-label="Logo servicio de salud habilitado, figura humana estilizada con círculo verde y texto azul alrededor">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae84c48c-4516-4162-8143-b94b76234355.png" 
+          alt="Logo servicio de salud habilitado, figura humana estilizada con un círculo verde arriba y texto azul en forma circular arriba" 
+          onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/224565bd-b1ff-4fb6-afff-959e155e8720.png';"
+        />
+      </div>
+    </div>
+
+    <h3 class="medicos-subtitle" aria-level="3">"Medicina Funcional: Recupera tu Salud de Forma Natural"</h3>
+
+    <div class="medicos-blocks" role="list" aria-label="Beneficios y características">
+      <div class="medicos-block highlight-1" role="listitem">Médicos expertos en Medicina Funcional y Alternativa</div>
+      <div class="medicos-block highlight-2" role="listitem"><span class="font-bold text-lg">+10</span><span class="font-light text-xs">Años de experiencia</span></div>
+      <div class="medicos-block highlight-3" role="listitem"><span class="font-bold text-lg">+8,000</span><span class="font-light text-xs">Pacientes Satisfechos</span></div>
+      <div class="medicos-block highlight-4" role="listitem">Mejora tu salud en 6 semanas con nosotros</div>
+      <div class="medicos-block highlight-5" role="listitem">Clínica habilitada por secretaría de Salud</div>
+    </div>
+
+    <div class="medicos-list-section">
+      <p class="medicos-list-title">Pide una cita médica con nosotros si quieres mejorar:</p>
+      <div class="medicos-lists">
+        <ul class="lista-medicos" aria-label="Síntomas y condiciones del lado izquierdo">
+          <li>
+            ✓ Colon irritable o gastritis
+          </li>
+          <li>
+            ✓ Cansancio y agotamiento
+          </li>
+          <li>
+            ✓ Falta de energía o concentración
+          </li>
+          <li>
+            ✓ Gripas a repetición o defensas bajas
+          </li>
+          <li>
+            ✓ Alergias
+          </li>
+          <li>
+            ✓ Dolores musculares o articulares
+          </li>
+          <li>
+            ✓ Dolores de cabeza
+          </li>
+        </ul>
+        <ul class="lista-medicos" aria-label="Síntomas y condiciones del lado derecho">
+          <li>
+            ✓ Desorden hormonal femenino
+          </li>
+          <li>
+            ✓ Problemas de próstata o bajo deseo sexual
+          </li>
+          <li>
+            ✓ Obesidad o sobrepeso
+          </li>
+          <li>
+            ✓ Prevención de enfermedades
+          </li>
+          <li>
+            ✓ Control de enfermedades crónicas
+          </li>
+          <li>
+            ✓ Hígado graso, colesterol alto o Diabetes
+          </li>
+          <li>
+            ✓ Antienvejecimiento natural
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
